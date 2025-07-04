@@ -39,3 +39,8 @@ A continuación, utilizaremos la palabra clave `ON` para indicar a la base de da
 Se debe tener en cuenta, también, que estamos utilizando *alias* para los nombres de las tablas (es decir `b` para `book` y `a` para `author`).
 
 Asignamos los alias en las cláusulas `FROM` e `INNER JOIN` y las utilizamos en toda la consulta. Los alias de tabla reducen la escritura y hacen que la consulta sea más legible.
+
+Tenga en cuenta que **el orden de las tablas no importa con el INNER JOIN**, o el simple JOIN. El conjunto de resultados sería exactamente el mismo si pusiéramos la tabla **`author`** en la cláusula `FROM` y la tabla **`book`** en la cláusula `INNER JOIN`.
+
+`INNER JOIN` sólo muestra los registros que están disponibles en ambas tablas. En nuestro ejemplo, todos los libros tienen un autor correspondiente y todos los autores tienen al menos un libro correspondiente. Veamos qué ocurre si algunos de los registros no coinciden.
+
